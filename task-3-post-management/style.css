@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4efe4;
+  color: #1a1a1a;
+}
+
+h1 {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #1a1a1a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+
+input,
+textarea {
+  padding: 14px 16px;
+  border: 2px solid #1a1a1a;
+  background-color: white;
+  font-size: 16px;
+}
+
+textarea {
+  height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #d94a1e;
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  border: 2px solid #1a1a1a;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #d94a1e;
+  background-color: #d94a1e;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn {
+  align-self: flex-start;
+}
+
+.message {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+.posts li {
+  padding: 20px;
+  background-color: #fffdf7;
+  border: 1px solid #1a1a1a;
+  border-top: 6px solid #d94a1e;
+}
+
+.posts h2 {
+  margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.posts p {
+  margin-bottom: 16px;
+  padding-top: 12px;
+  border-top: 1px dotted #b8b09c;
+  color: #444444;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.posts button {
+  margin-right: 10px;
+  padding: 10px 18px;
+}
+
+.edit-btn {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.delete-btn {
+  border-color: #d94a1e;
+  background-color: #d94a1e;
+}
